@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>semantic 요소 - 레이아웃 </title>
+
+
+     <!-- 폰트 2 -->
+     <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap" rel="stylesheet">
+     <!-- font-family: 'Dongle', sans-serif; -->
+     <style>
+         *{ box-sizing: border-box; margin: 0; padding: 0;}
+         body {
+             font-family: 'Noto Sans KR', sans-serif;
+         }
+         header {
+             background-color: lightgray;
+             height: 100px;
+             line-height: 100px;
+             text-align: center;
+             font-size: 20px;
+         }
+         nav {
+             float : left;
+             width : 20%;
+             height: 300px;
+             background-color: #339999;
+             padding : 20px;
+
+         }
+
+         article {
+             float : left;
+             padding : 20px;
+             width: 80%;
+             background-color: #f1f1f1;
+             height: 300px;
+         }
+
+         section::after{
+             content : '';
+             display : block;
+             clear : both;
+
+         }
+
+         footer {
+             background-color: #ffcc00;
+             height: 100px;
+             line-height: 100px;
+             text-align: center;
+         }
+
+         /* 반응형 적용 - 가로 사이즈 600px 이하 */
+         @media screen and (max-width : 600px){
+             nav,
+             article{
+                 width:100%;
+                 height:auto;
+             }
+         }
+    </style>
+
+</head>
+<body>
+    <h1>semantic 태그를 이용한 레이아웃</h1>
+    <header>
+        <h2>HEADER</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <!-- 한 줄 복사 : alt +shift ↓ -->
+                <li><a href="#">menu 001</a></li>
+                <li><a href="#">menu 002</a></li>
+                <li><a href="#">menu 003</a></li>
+                <li><a href="#">menu 004</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h1>SBS 아카데미</h1>
+            <P>
+                싶이 그들은 굳세게 것이다. 웅대한 많이 타오르고 있으며, 그들은 우리 피어나기 따뜻한 그와 것이다. 간에 같으며, 못하다 봄바람을 이상 보내는 피어나기 없으면 인간의 아니다. 날카로우나 이 꽃이 인생을 남는 운다. 것이 이상은 있는 보는 않는 보라. 아니더면, 가치를 있을 주는 청춘의 인도하겠다는 사막이다. 부패를 이성은 이 피어나는 듣기만 밝은 풀밭에 곧 교향악이다.
+            </P>
+            <P>
+                그들은 인간의 가치를 전인 뿐이다. 대중을 주며, 되려니와, 생생하며, 뿐이다. 피어나는 용기가 싸인 끝까지 같이, 설산에서 찬미를 아니다. 이상은 간에 얼마나 시들어 사막이다. 보배를 넣는 군영과 얼음 대한 하였으며, 시들어 방황하여도, 싹이 아니다. 돋고, 인생을 그것은 풍부하게 꽃이 투명하되 것이다.
+            </P>    
+        </article>
+    </section>
+
+    <footer>
+        <h2>FOOTER</h2>
+    </footer>
+    
+</body>
+</html>
