@@ -3,7 +3,30 @@
 <head>
     <style>
         /* 여기에 작성해보세요:) */
-        
+        .poet {
+            /* columns : 단의 크기, 개수 */
+            columns : 200px 3;
+            /* 개별 속성 */
+            column-width : 200px;
+            column-count:3;
+
+            /* 단 사이의 간격 */
+            column-gap: 50px;
+            column-rule: 1px solid lightblue;
+
+            width : 900px;
+            padding: 20px;
+            border : 1px solid gray;
+
+        }  
+
+        h2{
+            /* 모든 단을 병합해서 표시 */
+            column-span: all;
+            text-align: center;
+            margin:50px;
+            
+        }
     </style>
 </head>
 <body>
