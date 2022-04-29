@@ -1,0 +1,42 @@
+
+.container {
+    text-align: center;
+}
+
+.inner {
+    width: 70vw;
+    min-height: 80vh;
+    margin: 0 auto;
+    font-size: 0;
+    letter-spacing: 0;
+    word-spacing: 0;
+}
+
+.inner .item {
+    display: inline-block;
+    margin: 0;
+    width: 25%;
+    height: 20vh;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.color1 { background-color: tomato;}
+.color2 { background-color: cornflowerblue;}
+.color3 { background-color: mediumaquamarine;}
+.color4 { background-color: slateblue;}
+
+.color5 { background-color: #ff7979;}
+.color6 { background-color: #badc58;}
+.color7 { background-color: #535c68;}
+.color8 { background-color: #be2edd;}
+
+.color9 { background-color: rgb(255, 190, 118);}
+.color10 { background-color: rgb(249, 202, 36);}
+.color11 { background-color: rgba(19, 15, 64,0.8);}
+.color12 { background-color: rgba(240, 147, 43,0.8) ;}
+
+.color13 { background-color:  hsl(213, 100%, 69%);}
+.color14 { background-color:  hsl(336, 100%, 78%);}
+.color15 { background-color:  hsla(248, 100%, 16%, 0.2);}
+.color16 { background-color:  hsla(50, 48%,43%, 0.8);}

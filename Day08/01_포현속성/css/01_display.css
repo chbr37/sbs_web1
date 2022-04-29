@@ -27,3 +27,55 @@ li:hover {
 /* 화면에 보이지 않게 지정 */
 .none { display: none;}
 .hidden {visibility:hidden;}
+
+/* 요소를 생성 > 랜더링 > 출력 */
+/* 
+display : none;
+-화면에 요소 자체가 생성되지 않는다.
+레이아웃에 영향을 미치지 않는다.
+
+visibility: hidden;
+-요소를 생성하지만 랜더링하지 않는다.
+레이아웃에 영향을 미친다.
+*/
+
+/* grid */
+.grid-container {
+    display: grid;
+    /* Grid 레이아웃으로 컨테이너를 지정 */
+                            /* 1열 2열 3열 */
+    /* Grid 레이아웃의 열의 크기를 지정하는 속성 
+    : grid-template-columns: auto auto auto;
+    */
+
+    grid-template-columns: auto auto auto;
+    background-color: royalblue;
+    padding: 10px;
+}
+
+.item {
+    background-color: lightblue;
+    border : 1px solid black;
+    padding: 20px;
+    text-align: center;
+}
+
+.item img  { width : 100%}
+
+/* flex */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    /* 아이템들의 줄바꿈 여부를 지정하는 속성 */
+    padding: 0 4px;
+}
+.col{
+    width: calc(100% / 3);
+    padding : 0 4px;
+    box-sizing : border-box;    
+}
+.col img {
+    width: 100%;
+    margin-top: 8px;
+    vertical-align: middle;
+}
