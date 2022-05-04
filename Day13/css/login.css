@@ -1,0 +1,60 @@
+
+*{ margin: 0; padding: 0;}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* reset */
+input {
+    outline: none;
+    border: none;
+    background-color: transparent; /* 투명 */
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+/* 전체 영역 */
+.container {
+    width: 100%;
+    height: 100vh;
+    /* 그라데이션 배경 적용 */
+    background: 
+    radial-gradient(circle at 50% 0, rgba(255,0,0,0.5), rgba(255,0,0,0) 70%),
+    radial-gradient(circle at 7% 75%, rgba(0,0,255,0.5), rgba(255,0,0,0) 70%),
+    radial-gradient(circle at 93% 75%, rgba(0,255,0,0.5), rgba(255,0,0,0) 70%);
+}
+/* 로그인 영역 */
+.login-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 600px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: white;
+                /* x축y축 블러 색상 */
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.4);
+}
+
+/* inner */
+#login { width: 100%; height: 100px;}
+
+/* 로고 */
+#login .login-logo{
+    height: 200px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+#login .login-logo img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
