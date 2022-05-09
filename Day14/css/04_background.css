@@ -1,0 +1,25 @@
+
+*{margin: 0; padding: 0;}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    animation: bg 8s infinite; /* infinite : 무한 반복 (횟수는 숫자 (10,5,8 ....) 이런식으로 바꾸면 그숫자되로 반복 */
+}
+
+@keyframes bg {
+    0% {background-color: #27296d;}
+    25% {background-color: #f5c7f7;}
+    50% {background-color: #5e63b6;}
+    75% {background-color: #a393eb;}
+    100% {background-color: #27296d;}
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 60px;
+}

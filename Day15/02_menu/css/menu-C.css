@@ -1,0 +1,61 @@
+* { margin: 0; padding: 0; }
+
+.container {
+    width: 1200px;
+    height: 900px;
+    margin: 0 auto;
+    border: 3px dashed orange;
+    position: relative;
+}
+
+ul { list-style-type: none; }
+a { text-decoration: none; color: black; }
+
+header nav { float: left; height: 50px; text-align: center; }
+header nav .mainmenu { 
+    width: 1200px; 
+    line-height: 60px; 
+}
+
+/* 메인 메뉴 */
+header nav .mainmenu > li {
+    float: left;
+    width: calc(600px / 4);
+    height: 100%;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+header nav .mainmenu > li:hover { background-color: royalblue; }
+header nav .mainmenu > li:hover > a { color: white; }
+
+/*  */
+header nav .mainmenu > li.back { width: 600px; }
+header nav .mainmenu > li.back:hover { background-color: white;  }
+
+/* 메인 메뉴에 마우스 hover, 서브 메뉴 출력 */
+header nav .mainmenu:hover .submenu { display: block; }
+
+/* 서브 메뉴 */
+header nav .submenu { display: none; }
+header nav .submenu li { background-color: #ddd; }
+header nav .submenu li a { color: black; }
+header nav .submenu li:hover { background-color: cornflowerblue; }
+header nav .submenu li:hover a { color: white; }
+
+/* 서브메뉴 백그라운드 */
+header nav .subback {
+    display: none;
+    width: 1200px;
+    height: 240px;
+    background-color: #ddd;
+    padding-top: 60px;
+
+    /* position: absolute; */
+    /* top: 60px; */
+    /* z-index: -1; */
+}
+
+/* 메인 메뉴 마우스 올렸을 때, 서브메뉴 백그라운드 출력 */
+header nav .mainmenu:hover .subback { display: block; }

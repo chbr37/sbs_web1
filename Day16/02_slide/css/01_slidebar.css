@@ -1,0 +1,57 @@
+
+* { margin: 0; padding: 0; }
+
+.wrap { position: relative; overflow: hidden; }
+
+.sidebar {
+    width: 200px;
+    height: 100%;
+    background-color: #f1f1f1;
+    overflow: hidden;
+    position: absolute;            /* 부모요소를 기준으로 위치 설정 */
+    left: -200px;
+    transition: all 1s ease-in-out;
+    z-index: 10;
+}
+
+.sidebar a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 16px;
+}
+
+/* 현재 선택한 메뉴 */
+.sidebar a.active {
+    background-color: royalblue;
+    color: white;
+}
+
+/* 
+    :not(선택자)    
+    : '선택자'를 제외하고 선택
+*/
+/* 메뉴에 마우스 올렸을 때 */
+.sidebar a:hover:not(.active) {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+.content {
+    margin-left: 200px;
+    padding: 10px 20px;
+}
+
+/* category를 체크했을 때, 사이드바 슬라이드 */
+#category:checked ~ .sidebar {
+    left: 0;
+}
+
+/* 체크박스 출력x */
+#category { display: none; }
+
+/*
+    user-select
+    - 드래그 허용기준을 지정하는 속성
+*/
+.btn { cursor: pointer; user-select: none; }

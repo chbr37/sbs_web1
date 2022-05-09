@@ -1,0 +1,66 @@
+
+* { margin: 0; padding: 0;}
+
+.container {
+    width: 1200px;
+    height: auto;
+    margin: 100px auto;
+}
+
+.card-list { margin: 0 auto; text-align: center;}
+.card-list li {
+    display: inline-block;
+    width: calc(85% / 3);
+    margin: 20px;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.card-list li img {width: 100%;}
+.card-list li:hover img {
+    animation-name: zoom;
+    animation-duration: 0.5s;
+    /* 애니메이션 마지막 프레임을 유지 */
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
+
+@keyframes zoom {
+    100% {transform : scale(1.2);}
+}
+
+.hover-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.4);
+    opacity:  0;
+}
+
+.hover-box:hover {
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+     /* 애니메이션 마지막 프레임을 유지 */
+     animation-fill-mode: forwards;
+
+}
+
+@keyframes fadeIn {
+    100% {opacity: 1;}
+}
+
+.hover-box .heart {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+}
+
+.hover-box .heart img.heart2 {display: none;}
+.hover-box .heart:hover img.heart1 {display: none;}
+.hover-box .heart:hover img.heart2 {display: block;}

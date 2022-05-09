@@ -1,0 +1,126 @@
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* 모달 */
+#modal { 
+    width: 400px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: lightseagreen;
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 200;
+    transition: all 0.5s;
+}
+
+#modal .img-box {
+    width: 100%;
+    height: 520px;
+    background-color: beige;
+}
+
+#modal .img-box img {
+    width: 100%;
+    height: 520px;
+    object-fit: fill;
+}
+
+#modal .modal-bottom {
+    height: 80px;
+    background-color: black;
+}
+
+#modal .modal-bottom .text {
+    color: white;
+    line-height: 80px;
+    font-size: 20px;
+    padding: 0 20px;
+    width: 320px;
+    height: 100%;
+    float: left;
+}
+
+#modal .modal-bottom .close {
+    width: 80px;
+    height: 100%;
+    background-color: blueviolet;
+    float: right;
+    position: relative;
+}
+
+#modal .modal-bottom .close i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 34px;
+    cursor: pointer;
+}
+
+input[type='checkbox'] {
+    padding: 10px;
+    transform: scale(2);
+    margin: 0 20px;
+}
+
+label { 
+    cursor: pointer; 
+    user-select: none;
+}
+
+/* 모달 배경 */
+#modal-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(31,32,41,0.7);
+    opacity: 0.7;
+    z-index: 100;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+
+/* 모달 체크박스 */
+input#chk-modal { display: none; }
+
+/* 체크 상태일 때, 어두운 배경 안보이게 */
+input#chk-modal:checked ~ #modal-bg {
+    /* background-color: transparent; */
+    /* opacity: 0; */
+    /* display: none; */
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+}
+
+/* 체크 상태일 때, 모달 안보이게 */
+input#chk-modal:checked ~ #modal {
+    /* opacity: 0;
+    display: none; */
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+}
+
+
+/* 배경 라벨 */
+#modal-bg label {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+    }
+}

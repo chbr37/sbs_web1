@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모달</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/01_modal.css">
+</head>
+<body>
+    
+    <input type="checkbox" name="modal" id="chk-modal">
+    
+    <!-- 모달영역 -->
+    <div id="modal" class="main-modal">
+        <!-- 이미지 영역 -->
+        <div class="img-box">
+            <a href="#">
+                <img src="img/modal.jpg" alt="모달 이미지">
+            </a>
+        </div>
+        <!-- 버튼 영역 -->
+        <div class="modal-bottom">
+            <!-- 텍스트 -->
+            <div class="text">
+                <input type="checkbox" name="modal" id="check">
+                <label for="check">오늘 하루 열지 않음</label>
+            </div>
+            <!-- 닫기 -->
+            <div class="close">
+                <label for="chk-modal">
+                    <!-- X 아이콘 -->
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <!-- 어두운 배경 -->
+    <div id="modal-bg" class="chk-modal">
+        <label for="chk-modal"></label>
+    </div>
+
+</body>
+</html>
