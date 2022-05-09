@@ -35,8 +35,8 @@ h1 { text-align: center;}
 
 .first {top: 100px; float: left; background-color:red;}
 .second {top: 100px; float: right; background-color:green;}
-.third {bottom: 100px; float: left; background-color:yellowgreen;}
-.fourth {bottom: 100px; float: right; background-color:blue;}
+.third {top: 100px; float: left; background-color:yellowgreen;}
+.fourth {top: 100px; float: right; background-color:blue;}
 
 .fifth {top:0; left:500px;}
 .sixth {top:200px; left:500px;}
