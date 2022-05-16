@@ -20,13 +20,26 @@
     - 위치가 변동되어도 처음 배치된 공간을 그대로 유지
     - 멀리 이동하진 않습니다
 -->
+<!-- position을 사용할 겹치는 순간 html 순서상을 기준 : default
+    그래서 z-index 명령어를 사용 -->
+
+<!-- absolute  : 부모들 중에 position 명령어를 가지고 있는 부모를 기준하며, 
+    position 명령어를 가지고 있는 부모들 중 가장 가까운 부모를 기준합니다. -->
+    <!-- absolute 사용시 해당 선택자가 누구를 기준으로 하는지를 반드시 정해줘야 합니다 -->
+<!-- position 명령어 사용시 2층(공중에 뜸) 현상 발생 -->
+
+<!-- fixed : 부모 & 조상이 position의 소유 유무와 관련 없이
+바로 html 태그를 기준으로 움직입니다.
+    모달창에 주로 사용-->
+
 
 <ul class="p_box">
     <li class="list1">list1</li>
     <li class="list2">list2</li>
     <li class="list3">list3</li>
+    <li class="list4">list4</li>
+    <li class="list5">list5</li>
 </ul>
     
-
 </body>
 </html>

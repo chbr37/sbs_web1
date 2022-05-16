@@ -6,6 +6,7 @@ ul{list-style: none;}
     width: 600px;
     height: 600px;
     background-color: pink;
+    position: relative;
 }
 .p_box > li {
     width: 200px;
@@ -13,15 +14,36 @@ ul{list-style: none;}
 }
 .p_box .list1{
     background-color: tomato;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 .p_box .list2{
     background-color: orange;
-    position: relative;
-    left: 100px;
-    top: 100px;
-    opacity: 0.6;
+    position: absolute;
+    left: 0;top: 0;
+    /* opacity: 0.6;
+    z-index: 1; */
 }
 .p_box .list3{
     background-color: yellow;
-    position: relative;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.p_box .list4{
+    background-color: green;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+.p_box .list5{
+    background-color: blue;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /* margin:-100px 0 0 -100px ; */
+    width: 30vw;
+    height: 30vh;
+    transform: translate(-50%, -50%);
 }

@@ -1,0 +1,24 @@
+
+*{margin: 0;padding: 0;box-sizing: border-box;}
+ul{list-style: none;}
+
+.scroll {
+    height: 2000px;
+    background: linear-gradient(red,blue);
+}
+.scroll > div {
+    width: 200px;
+    height: 200px;
+}
+.scroll .box1{
+    height: 300px;
+    background-color: tomato;
+    position: relative;
+    left: -100px;
+}
+.scroll .box2{
+    background-color: orange;
+    position: sticky;
+    left: 50px;
+    top: 50px;
+}
