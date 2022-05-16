@@ -1,0 +1,73 @@
+
+*{margin:0;padding:0;}
+ul{list-style: none;}
+
+
+
+/* # 아이디 선택자 */
+/* . 클래스 선택자 */
+/* <> 태그 선택자*/
+/* 콘텐츠와 콘텐츠 사이에 공간을 줄 때 margin을 사용 합니다. */
+.list1{
+    width: 100px;
+    height: 100px;
+    background-color: tomato;
+    margin: 0 0 0 0;
+    /* top right bottom left 순서이며 시계방향 */
+    /* 직선상의 수치가 동일할 경우 생략 가능 */
+    /* margin:100px 200px 100px 200px = margin : 100px 200px; */
+    /* margin: 100px 200px 50px 200px; = margin: 100px 200px 50px; */
+    /* 위 방식을 margin 과 padding이 동일한 작성(지금은 margin으로 예를 든거임) */
+    /* margin-bottom: 50px; */
+    /* padding-bottom: 50px; */
+}
+.list2{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    padding: 100px;
+    /* 내부요소이며 해당 콘텐츠가 공간을 실제로 차지합니다 */
+    /* *콘텐츠와 콘텐츠 사이의 여백이 절대 아닙니다.* */
+}
+
+/* 선택자 우선권과 습관 */
+
+.box_wrap{
+    width: 500px;
+    background-color: pink;
+    margin-bottom: 100px;
+}
+
+/* css 선택자 뒤에 공백은(띄어쓰기) "하위"의 뜻을 가지고 있습니다 */
+/*  margin의 특징1 */
+/*  자식이 부모와 맡닺고 있는 공간에서 여백값을 주면 부모도 함께 밀리는 현상 */
+/* 해결방법 */
+/* 1. padding으로 대체합니다. */
+/* 2. 한번 더 감싸서 새로 감싼 태그에게 padding으로 여백을 부여 */
+
+/* margin의 특징2 */
+/* 세로에서 margin 여백이 겹치는 현상(가로에서는 일어나지 않음) */
+.box_wrap .box1{
+    width: 200px;
+    height: 200px;
+    background-color: tomato;
+    /* margin-top: 100px; */
+    padding-top: 100px;
+}
+
+.box_wrap .box2{
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+}
+
+.box_wrap2{
+    width: 500px;
+    height: 200px;
+    background-color: black;
+    margin: 0 auto;     /* margin :0 auto; = margin:0 auto auto */
+    /* margin : 0 auto; = 선택자가 가지고 있는 block 속성의 영역 중 width 값을 제외한
+    나머지 여백에 대해 좌우 비율을 균등하게 나눠 가집니다. -> block 요소에게만 사용이 가능하며,
+    반드시 width 값을 가지고 있어야 적용이 가능합니다. */
+
+}

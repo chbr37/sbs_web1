@@ -1,0 +1,55 @@
+
+*{margin: 0;padding: 0;box-sizing: border-box;}
+.cf:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.box_wrap {}
+
+.box_wrap{
+    width: 700px;
+    background-color: pink;
+   /*  overflow: hidden; */
+   border-top-right-radius:20px ;
+   border-bottom-right-radius:20px ;
+
+}
+/* 태그 선택자를 사용시 친자식 표시를 하시기를 권장 ">" */
+/* .box_wrap > div{
+    width: 200px;
+    height: 200px;
+} */
+/* 클래스명을 만들어두고 가져다 사용하는 응용 */
+.box{
+    width: 200px;
+    height: 200px;
+    float: left; 
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+/* box와 box1 클래스명을 동시에 가지고 있는 선택자 */
+.box_wrap .box1.box{
+    background-color: tomato;
+}
+
+/* 해당 css가 연결된 모든 html파일들 중 box1 이라는 클래스명을 가진 선택자에게 해당 명령어 사용  */
+/* 클래스 선택자 box_wrap의 하위 요소에게 해당 명령어 사용 */
+.box1{
+    background-color: tomato;
+} 
+.box_wrap .box2{
+    background-color: orange;
+    margin:0 50px; /* margin-right:50px, margin-left:50px */
+}
+.box_wrap .box3{
+    background-color: yellow;
+}
+
+.box_wrap .box > p:first-child{
+    border-bottom: 1px solid #3d3d3d;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}

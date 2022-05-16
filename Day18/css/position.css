@@ -1,0 +1,27 @@
+
+*{margin: 0;padding: 0;box-sizing: border-box;}
+ul{list-style: none;}
+
+.p_box{
+    width: 600px;
+    height: 600px;
+    background-color: pink;
+}
+.p_box > li {
+    width: 200px;
+    height: 200px;
+}
+.p_box .list1{
+    background-color: tomato;
+}
+.p_box .list2{
+    background-color: orange;
+    position: relative;
+    left: 100px;
+    top: 100px;
+    opacity: 0.6;
+}
+.p_box .list3{
+    background-color: yellow;
+    position: relative;
+}
