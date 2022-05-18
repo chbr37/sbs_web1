@@ -1,0 +1,92 @@
+
+*{margin: 0;padding: 0;box-sizing: border-box;}
+ol,ul,dl{list-style: none;}
+/* ol : 순서가 존재하는 콘텐츠 리스트(레시피, 조립 설명서)
+   ul : 순서가 존재하지 않는 콘텐츠 리스트 (ol과 dl 외 나머지)
+   dl : 단어와 그 단어의 설명이 필요한 콘텐츠 (단어장 페이지)
+*/
+
+div{
+    height: 200px;
+    background: pink;
+}
+
+/* transition 사용할 때는 시작과 끝의 동일한 명령어가 존재해야 됨 */
+div > p {
+    width: 200px;
+    height: 0px;
+    background: tomato;
+    position: relative;
+    top: 200px;
+    transition: all 1s;
+}
+
+/* 부모에게 hover 했을 때 자식에게 명령어 */
+div:hover > p{
+    width: 200px;
+    height: 150px;
+    background: orange;
+
+}
+
+/* hover 와 position 예시 */
+
+ul {
+    width: 200px;
+    height: 100px;
+    background: green;
+    margin: 50px auto 0;
+    position: relative;
+}
+ul >li{
+    background: black;
+    position: absolute;
+}
+ul .list1 {
+    width: 0;
+    height: 5px;
+    left: 0;
+    top: 0;
+    transition: width 1s;
+}
+ul:hover .list1{
+    width: 100%;
+    height: 5px;
+    transition: width 0,25s;
+}
+ul .list2 {
+    width: 5px;
+    height: 0;
+    right: 0;
+    top: 0;
+    transition: height 1s;
+}
+ul:hover .list2{
+    width: 5px;
+    height: 100%;
+    transition: height 0,25s;
+}
+ul .list3 {
+    width: 0;
+    height: 5px;
+    right: 0;
+    bottom: 0;
+    transition: width 1s;
+}
+ul:hover .list3{
+    width: 100%;
+    height: 5px;
+    transition: width 0,25s;
+}
+ul .list4 {
+    width: 5px;
+    height: 0;
+    left: 0;
+    bottom: 0;
+    transition:  height 1s;
+}
+ul:hover .list4{
+    width: 5px;
+    height: 100%;
+    transition: height 0,25s;
+}
