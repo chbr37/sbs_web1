@@ -1,0 +1,108 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+ol,ul,dl{list-style: none;}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.inner{
+    width: 1250px;
+    margin: 0 auto;
+}
+
+#header{}
+#header .inner{
+    width: 1350px;
+    height: 60px;
+    padding: 10px 0;
+    margin: 0 auto;
+    /* margin : 0 auto 공식은
+    해당 선택자가 반드시 width 값이 존재해야 한다 */
+}
+#header .logo{
+    float: left;
+    margin-right: 100px;
+}
+
+#header nav{
+    width: 1000px;
+    float: left;
+    padding-top: 10px;
+}
+#header nav ul{}
+#header nav ul>li{
+    float: left;
+    margin-right: 50px;
+}
+#header nav ul>li>a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    /* 폰트 굵기 
+    100 : Thin
+    300 : Light
+    400 : Regular
+    500 : Medium
+    600 : Bold
+    800 : ExtraBold */
+}
+/* header End */
+
+.main {
+    margin-bottom: 70px;
+    text-align: center;
+}
+/* main End */
+
+.banner_box{
+  margin-bottom: 70px;
+}
+.banner_box .inner > article{
+    float: left;
+}
+
+.banner_box .inner > article:nth-child(2){
+    margin: 0 22px;
+}
+
+/* banner_box End */
+
+
+
+.con_box h3{
+    font-size: 30px;
+    color: #8b8b8b;
+    font-family: 'Suranna', serif;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.con_box h3 span{
+    color: #1b3f36;
+    text-decoration: underline;
+}
+
+.con_box .con_list{
+    font-size: 16px;
+    text-align: center;
+}
+.con_box .con_list>li{
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.con_box .con_list>li:nth-child(4n){
+    margin-right: 0;
+}
+.con_box .con_list>li>*{   /* con_box 안에  con_list 안에 li안의 모든 친자식*/
+    
+    margin-bottom: 10px;
+}
+.con_box .con_list>li .img_box{}
+.con_box .con_list>li h4{}
+.con_box .con_list>li p{}
+.con_box .con_list>li p:last-child{
+    margin-bottom: 0;
+}
