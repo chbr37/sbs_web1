@@ -1,4 +1,4 @@
-*{margin: 0;padding: 0;box-sizing: border-box;}
+*{margin: 0;padding: 0;box-sizing: border-box}
 ol,ul,dl{list-style:none;}
 a{
     text-decoration: none;
@@ -10,7 +10,7 @@ a{
     clear: both;
 }
 
-.wrap{
+#wrap{
     width: 1200px;
     margin: 0 auto;
 }
@@ -56,7 +56,7 @@ a{
 #banner > article:nth-child(2){
     margin: 0 10px;
 }
-#banner .article_1{
+#banner .banner_1{
     width: 400px;
 }
 
@@ -86,7 +86,7 @@ a{
 #banner .banner_1 .notic>li>a{}
 
 #banner .banner_1 .notic>li:nth-child(odd)>a{
-    background: #fff;
+    color: #fff;
 }
 
 #banner .type1{
