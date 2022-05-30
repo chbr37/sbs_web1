@@ -1,0 +1,182 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+ol,ul,dl{list-style: none;}
+a{text-decoration: none;color: inherit;}
+h1,h2,h3,h4,h5,h6{font-weight: 400;text-transform: uppercase;color: #3f51b5;}
+body{
+    font-family: 'Montserrat', sans-serif;line-height: 1;font-size: 16px;
+}
+.inner{
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+    margin: 0 auto;
+}
+
+/* block 요소 특징 */
+/* float 나 position:absolute, fixed 같이 2층 혹은 공중에 뜨는 css속성을
+받으면 default로 들어가 있는 width:100% 기능이 삭제되기 때문에 직접 주거나
+혹은 자식 요소의 크기를 받아 갑니다 */
+#header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    background: #fff;
+    color: #3f51b5;
+    box-shadow: 0 1px 10px gray;
+}
+#header a{
+    display: block;
+}
+#header .inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+}
+
+#header .logo{
+    font-size: 26px;
+}
+
+#header .gnb{}
+#header .gnb ul {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    text-transform: uppercase;
+}
+#header .gnb ul > li{}
+#header .gnb ul > li > a{}
+
+/* header End */
+
+#visual{
+    margin-bottom: 100px;
+    padding-top: 86px;
+}
+#visual img{
+    display: block;
+    width: 100%;
+}
+
+#academy{
+    margin-bottom: 100px;
+    padding-bottom: 100px;
+    border-bottom: 2px solid #eee;
+}
+
+#academy .academy_tit{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+#academy .academy_tit h2{
+    font-size: 42px;
+}
+#academy .academy_tit p{
+    position: relative;
+    padding-left: 20px;
+    line-height: 2;
+}
+#academy .academy_tit p::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 45px;
+    background: gray;
+}
+
+#academy .academy_promotion{}
+#academy .academy_promotion ul{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+#academy .academy_promotion ul > li{
+    width: 23%;
+}
+#academy .academy_promotion ul >li > a{}
+
+#academy .academy_promotion ul >li > a img{
+    height: 52px;
+}
+
+#academy .academy_promotion ul >li > a h3{
+    margin: 30px 0 20px;
+}
+#academy .academy_promotion ul >li > a p{
+    font-size: 14px;
+}
+/* academy End */
+
+#company{
+    position: relative;
+    margin-bottom: 100px;
+    padding-bottom: 102px;
+}
+#company::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 2px;
+    background: #3f51b5;
+}
+#company .inner{
+    max-width: 1800px;
+}
+#company h2{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 70px;
+    font-size: 42px;
+}
+#company ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+#company ul > li{
+    width: 25%;
+    position: relative;
+    overflow: hidden;
+}
+#company ul > li > a{
+    display: block;
+    font-size: 0;
+}
+#company ul > li > a > img{}
+
+#company ul > li > a .hover_box{
+    position: absolute;
+    left: 0;
+    /* top: 0; */
+    top: -30px;
+    width: 100%;
+    height: 100%;
+    background: rgba(63,81,181,0.85);
+    padding: 30px 40px;
+    transition: all 0.35s;
+    opacity: 0;
+}
+#company ul > li > a .hover_box h3{
+    font-size: 23px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+#company ul > li > a .hover_box p{
+    font-size: 16px;
+    color: #fff;
+
+}
+
+#company ul > li:hover a .hover_box{
+    top: 0;
+    opacity: 1;
+}

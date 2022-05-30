@@ -1,0 +1,59 @@
+*{margin: 0; padding: 0;box-sizing: border-box;}
+body{
+    padding: 50px;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background: transparent;
+    border: 1px solid #000;
+    margin-bottom: 100px;
+    /* transform-origin: ; */
+}
+
+.card{
+    width: 100px;
+    height: 100px;
+    background: rgba(0,0,255,0.5);
+    transition: all 0.5s;
+}
+/* 할 수 있다면 부모에게 hover 거는게 좋습니다 */
+.box:hover .card{
+    transform: rotate(45deg);
+}
+/* ============================================== */
+
+.type2 .card{
+    transform-origin: right bottom;
+}
+
+.type3 .card{
+    transform-origin: 100% 50% ;
+}
+
+/* ============================================== */
+/* perspective */
+/* 원근감 & 원근법 이라고 합니다 */
+/* 부모와 하위 요소간의 원근감 거리를 설정 */
+/* 속성 값으로 숫자를 입력하며 px, em 등의 단위 사용 가능 */
+/* 사용은 원근감이 표시되는 대상의 친부모에게 사용 */
+.type4{
+    perspective: 100px;
+}
+.type4:hover .card{
+    transform: rotateX(300deg);
+}
+.type5{
+    perspective: 200px;
+}
+.type5:hover .card{
+    transform: rotateY(360deg);
+}
+.type6{
+    perspective: 200px;
+    overflow: hidden;
+}
+.type6:hover .card{
+    transform: rotateY(25deg);
+}

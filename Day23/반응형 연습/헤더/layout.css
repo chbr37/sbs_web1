@@ -1,0 +1,129 @@
+*{margin:0;padding:0;box-sizing:border-box}
+ol,ul,dl{list-style:none;}
+a{text-decoration:none;color:inherit;}
+
+
+#header{
+    background:#2d2d2d;
+}
+#header .inner{
+    width:100%;
+    max-width:1300px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 50px;
+    position:relative;
+    overflow: hidden;
+}
+
+#header .logo{}
+#header .logo a {
+    display:block;
+    font-size:0;
+}
+
+#header nav{}
+#header nav ul{
+    color:#fff;
+    display:flex;
+    font-size:16px;
+    text-transform:capitalize;
+}
+#header nav ul > li{
+  
+}
+
+#header nav ul > li:nth-child(2){
+    margin: 0 50px;
+    /* border-right:1px solid gray; */
+    /* border-left:1px solid gray; */
+    padding:0 50px;
+    position:relative;
+}
+
+#header nav ul > li:nth-child(2):before,
+#header nav ul > li:nth-child(2):after{
+    content:"";
+    width:2px;
+    height:15px;
+    background:gray;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+}
+#header nav ul > li:nth-child(2):before{
+    left:0;
+}
+#header nav ul > li:nth-child(2):after{
+    right:0;
+}
+
+#header nav .hamburger{
+    position:absolute;
+    /* right:30px; */
+    right:-50%;
+    top:50%;
+    transform:translateY(-50%);
+    width:30px;
+    height:21px;
+    /* background:red; */
+    cursor:pointer;
+    transition: right 0.5s;
+}
+
+#header nav .hamburger span{
+    position:relative; 
+    top:9px;   
+}
+#header nav .hamburger span,
+#header nav .hamburger span:before,
+#header nav .hamburger span:after{
+    display:block;
+    width:30px;
+    height:3px;
+    background:#fff;
+}
+#header nav .hamburger span:before,
+#header nav .hamburger span:after{
+    content:"";
+    position:absolute;
+    left:0;
+}
+#header nav .hamburger span:before{
+    top:-9px;
+}
+#header nav .hamburger span:after{
+    top:9px;
+}
+
+
+/* 0 ~ 900px 까지 */
+@media screen and (max-width:900px){
+    #header .inner{
+        justify-content:center;;
+    }
+    #header nav ul{
+        display:none;
+    }
+    #header nav .hamburger{
+        right:30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
