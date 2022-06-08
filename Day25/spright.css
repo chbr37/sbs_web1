@@ -1,0 +1,28 @@
+*{margin: 0;padding: 0;}
+
+
+
+
+@keyframes run {
+    to{
+        background-position: -192px 0;
+    }
+}
+@keyframes move {
+    to{
+        left: 500px;
+    }
+}
+
+.cover{
+    position: relative;
+    left: 0;
+    animation: move 5s infinite ease-out;
+}
+
+.hero{
+    width: 64px;
+    height: 64px;
+    background: url(img/spright.png)no-repeat left top;
+    animation: run 0.5s infinite steps(3);
+}

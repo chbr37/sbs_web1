@@ -1,0 +1,153 @@
+*{margin:0;padding:0;box-sizing:border-box;}
+ol,ul,dl{list-style:none;}
+a{text-decoration:none;color:inherit}
+
+.inner{
+    max-width:1250px;
+    width:100%;
+    margin:0 auto;
+    padding:0 25px;
+}
+
+
+#header{
+    background:#1e172a;
+}
+#header .inner{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;;
+    padding:10px 25px;
+    color:#fff;
+
+}
+
+#header .logo{
+
+}
+/* width & height 동시에 줄 필요성이 있는지 확인해보는게 좋습니다 */
+/* 한쪽만 주는게 이미지가 깨지지 않고 가변하기 쉽기 때문 */
+#header .logo img{
+    width:120px;
+}
+
+#header .gnb{
+    width:800px;
+}
+#header .gnb ul{
+    display:flex;
+    justify-content:space-evenly;
+}
+
+#header .language{
+
+}
+
+#header .language select{
+    padding:5px 10px;
+    appearance: none;
+    background:#1e172a url("img/bg_sel_family.png") no-repeat center right;
+    padding-right:50px;
+    outline:none;
+    color:#fff;
+}
+
+#header .language select option{
+    background:#1e172a;
+    color:#fff;
+}
+
+/* header End */
+
+
+#visual{
+    background:url("img/visual_bg.png") no-repeat center;
+    background-size:cover;
+    margin-bottom:100px;
+}
+#visual .inner{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    color:#fff;
+}
+#visual h2{
+    padding-top:100px;
+    margin-bottom:70px;
+}
+#visual article{
+    padding-bottom:100px;
+}
+#visual article ul{
+    display:flex;
+}
+#visual article ul > li{
+    width:160px;
+    height:140px;
+    background:tomato;
+}
+#visual article ul > li:first-child{
+    background:orange;
+}
+#visual article ul > li:last-child{
+    background:blue;
+}
+#visual article ul > li > a{
+    display:flex;
+    height:100%;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;;
+}
+#visual article ul > li > a img{
+    /* display:block; */
+}
+#visual article ul > li > a span{}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

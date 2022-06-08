@@ -1,0 +1,504 @@
+*{margin:0;padding:0;box-sizing:border-box;}
+ol,ul,dl{list-style:none;}
+a{text-decoration:none;color:inherit}
+h1,h2,h3,h4,h5,h6{font-weight:400;text-transform:uppercase;color:#3f51b5}
+body{font-family: 'Montserrat', sans-serif;line-height:1;font-size:16px;}
+.inner{
+    width:100%;
+    max-width:1300px;
+    padding:0 50px;
+    margin:0 auto;
+}
+
+/* block 요소 특징 */
+/* float 나 position:absolute,fixed 같이 2층 혹은
+공중에 뜨는 css속성을 받으면 default로 들어가 있는
+width:100% 기능이 삭제되기 때문에 직접 주거나 혹은
+자식 요소의 크기를 받아 갑니다 */
+
+#header{
+    position:fixed;
+    left:0;
+    top:0;
+    z-index:100;
+    width:100%;
+    background:#fff;
+    color:#3f51b5;
+    box-shadow:0 1px 10px gray;
+    
+}
+#header a{
+    display:block;
+}
+#header .inner{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:relative;
+    padding: 30px 50px;
+    transition:all 0.35s;
+}
+
+#header .logo{
+    font-size:26px;
+}
+
+#header .gnb{}
+#header .gnb ul{
+    display:flex;
+    justify-content:space-between;
+    width:500px;
+    text-transform:uppercase
+}
+#header .gnb ul > li{}
+#header .gnb ul > li > a{}
+
+#header .hamburger{
+    position:absolute;
+    right:50px;
+    top:50%;
+    transform:translateY(-50%);
+    width:20px;
+    /* background:red; */
+    display:none;
+}
+#header .hamburger span{
+    display:block;
+    width:100%;
+    height:2px;
+    background:#3f51b5;
+    transition:all 0.3s ease-in-out;
+}
+#header .hamburger span:nth-child(2){
+    margin: 5px auto;
+}
+
+#header .hamburger span:first-child{
+    transform-origin:left top;
+}
+#header .hamburger span:last-child{
+    transform-origin: left bottom;
+}
+#header .hamburger:hover span:first-child{
+    transform: rotate(45deg);
+}
+#header .hamburger:hover span:nth-child(2){
+    opacity: 0;
+}
+#header .hamburger:hover span:last-child{
+    transform:rotate(-45deg);
+}
+
+
+
+/* header End */
+
+#visual{
+    margin-bottom:100px;
+    padding-top:86px;
+}
+#visual img{
+    display:block;
+    width:100%;
+}
+
+#academy{
+    margin-bottom:100px;
+    padding-bottom:100px;
+    border-bottom:2px solid #eee;
+}
+
+#academy .academy_tit{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:100px;
+}
+#academy .academy_tit h2{
+    font-size:42px;
+}
+#academy .academy_tit p{
+    position:relative;
+    padding-left:20px;
+    line-height:2;
+}
+
+#academy .academy_tit p::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:50%;
+    transform:translateY(-50%);
+    width:2px;
+    height:45px;
+    background:gray;
+}
+
+#academy .academy_promotion{}
+#academy .academy_promotion ul{
+    display:flex;
+    justify-content:space-between;
+    text-align:center;
+}
+#academy .academy_promotion ul > li{
+    width:23%;
+}
+#academy .academy_promotion ul > li > a{}
+
+#academy .academy_promotion ul > li > a img{
+    height:52px
+}
+#academy .academy_promotion ul > li > a h3{
+    margin: 30px 0 20px;
+}
+#academy .academy_promotion ul > li > a p{
+    font-size:14px;
+}
+/* academy End */
+
+
+#company{
+    position:relative;
+    margin-bottom:100px;
+    padding-bottom:102px;
+}
+#company:before{
+    content:"";
+    position:absolute;
+    left:50%;
+    bottom:0;
+    transform:translateX(-50%);
+    width:20px;
+    height:2px;
+    background:#3f51b5;
+
+}
+
+
+#company .inner{
+    max-width:100%;;
+}
+
+#company h2{
+    width:100%;
+    max-width:1200px;
+    margin:0 auto 70px;
+    font-size:42px;
+}
+#company ul{
+    display:flex;
+    flex-wrap:wrap;
+}
+#company ul > li{
+    width:25%;
+    position:relative;
+    overflow:hidden;
+}
+#company ul > li > a{
+    display:block;
+    font-size:0;
+}
+#company ul > li > a > img{
+    width:100%;
+}
+
+#company ul > li > a .hover_box{
+    position:absolute;
+    left:0;
+    /* top:0; */
+    top:-30px;
+    width:100%;
+    height:100%;
+    background:rgba(63,81,181,0.85);
+    padding:30px 40px;
+    transition: all 0.35s;
+    opacity: 0;
+}
+#company ul > li > a .hover_box h3{
+    font-size:23px;
+    color:#fff;
+    margin-bottom:10px;
+}
+#company ul > li > a .hover_box p{
+    font-size:16px;
+    color:#fff;
+}
+
+#company ul > li:hover a .hover_box{
+    top:0;
+    opacity:1;
+}
+/* company End */
+
+
+
+
+#about{
+    margin-bottom:100px;
+}
+#about .inner{
+    display:flex;
+    justify-content:space-between;
+}
+#about h2{}
+#about .banner_wrap{
+    width:75%;
+}
+#about .banner_wrap ul{
+    display:flex;
+    justify-content:space-between;
+}
+#about .banner_wrap ul > li{
+    width:32%;
+}
+
+#about .banner_wrap ul > li img{
+    width:100%;
+}
+#about .banner_wrap ul > li p{
+    font-size:11px;
+    margin:10px 0;
+}
+
+#about .banner_wrap ul > li h3{
+    font-size:16px;
+    color:#424242;
+    line-height:1.7;
+}
+
+
+
+
+/* about End */
+
+#contact{
+    margin-bottom:100px;
+}
+#contact .inner{
+    display:flex;
+    justify-content:space-between;
+}
+
+#contact h2{}
+
+#contact .form_box{
+    width:75%;
+}
+#contact .form_box fieldset{
+    border:none;
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:30px;
+}
+#contact .form_box fieldset .input_box{
+    width:45%;
+}
+#contact .form_box fieldset .text_box{
+    width:50%;
+}
+#contact .form_box fieldset .input_box input,
+#contact .form_box fieldset .text_box textarea{
+    width:100%;
+    border:1px solid transparent;
+    border-bottom:1px solid #757575;
+    color:#3f51b5;
+    font-size:12px;
+    font-family: 'Montserrat', sans-serif;
+    outline:none;
+    transition: all 0.35s;
+}
+#contact .form_box fieldset .input_box input{
+    line-height:30px;
+    margin-bottom:40px;
+    padding-left:15px;
+}
+#contact .form_box fieldset .input_box input:last-child{
+    margin-bottom:0;
+}
+#contact .form_box fieldset .text_box textarea{
+    height:100%;
+    padding:15px;
+}
+#contact .form_box fieldset .input_box input::placeholder,
+#contact .form_box fieldset .text_box textarea::placeholder{
+    color:#3f51b5;
+}
+/* tip : focus와 active는 동시에 써주시는게 좋습니다. */
+#contact .form_box fieldset .input_box input:focus,
+#contact .form_box fieldset .input_box input:active,
+#contact .form_box fieldset .text_box textarea:focus,
+#contact .form_box fieldset .text_box textarea:active{
+    border:1px solid #3f51b5;
+    border-radius:5px;
+}
+#contact .send_btn{}
+#contact .send_btn button{
+    display:block;
+    background:#3f51b5;
+    padding:10px 15px;
+    border:none;
+    border-radius:5px;
+    color:#fff;
+    text-transform:uppercase;
+    outline:none;
+    cursor:pointer;
+    margin-left:auto;
+}
+
+/* contact End */
+
+#footer{}
+
+#footer iframe{
+    width:100%;
+    height:400px;
+    border:none;
+}
+#footer .copy{
+    background:#424242;
+    padding:30px 0;
+    color:#fff;
+    text-transform:uppercase;
+    text-align:center;
+    font-weight:600;
+}
+
+
+@media all and (max-width:1199px) {
+    #academy .academy_tit{
+        flex-direction: column;
+        text-align:center;
+    }
+    #academy h2{
+        margin-bottom:70px;
+    }
+    #academy p:before{
+        display:none;
+    }
+    #company{
+        padding-bottom:50px;
+        margin-bottom:50px;
+    }
+    #company ul > li{
+        width:50%;
+    }
+    #about{}
+    #about .inner{
+        flex-direction: column;
+    }
+    #about h2{
+        margin-bottom:50px;
+        text-align:center;
+    }
+    #about .banner_wrap{
+        width:100%;
+    }
+
+    #contact .inner{
+        flex-direction: column;
+    }
+    #contact h2{
+        text-align:center;
+        margin-bottom:40px;
+    }
+    #contact .form_box{
+        width:100%;
+    }
+
+}
+
+@media all and (max-width:799px){
+    #header .inner{
+        padding: 20px 50px;
+    }
+    #header .gnb ul{
+        display:none;
+    }
+    #header .hamburger{
+        display:block;
+    }
+    #visual{
+        padding-top:66px;
+    }
+    #academy{
+        margin-bottom:50px;
+        padding-bottom:50px;
+    }
+    #academy .academy_promotion ul{
+        flex-direction: column;
+    }
+    #academy .academy_promotion ul > li{
+        width:100%;
+        margin-bottom:40px;
+    }
+    #academy .academy_promotion ul > li:last-child{
+        /* margin-bottom:0; */
+    }
+    #academy .academy_promotion ul > li p{
+        line-height:1.7;
+    }
+    #company ul > li{
+        width:100%;
+    }
+    #about .banner_wrap{}
+    #about .banner_wrap ul{
+        flex-direction: column;
+    }
+    #about .banner_wrap ul > li{
+        width:100%;
+        margin-bottom:40px;
+    }
+    #about .banner_wrap ul > li:last-child{
+        margin-bottom:0;
+    }
+
+    #contact .form_box fieldset{
+        flex-direction: column;
+    }
+    #contact .form_box fieldset .input_box,
+    #contact .form_box fieldset .text_box{
+        width:100%;
+    }
+    #contact .form_box fieldset .input_box input:last-child{
+        margin-bottom:40px;
+    }
+    #contact .form_box fieldset .text_box textarea{
+        height:150px;
+    }
+    #contact .form_box .send_btn button{
+        width:100%;
+    }
+
+    #footer iframe{
+        height:300px;
+    }
+    #footer .copy{
+        padding:20px 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

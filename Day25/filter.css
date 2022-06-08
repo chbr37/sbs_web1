@@ -1,0 +1,58 @@
+*{margin: 0;padding: 0;}
+
+div{
+    width: 650px;
+    margin: 0 auto;
+    border: 1px solid #000;
+    padding: 10px;
+}
+div img {
+    width: 200px;
+    margin: 6px;
+}
+/* blur - default =0;
+수치 값이 높을수록 더욱 진하게 블러 */
+div img:nth-child(2){
+    filter:blur(10px);
+}
+
+/* brightness - default =1 */
+/* 1보다 커지면 밝아지고, 1보다 낮으면 어두워짐 */
+div img:nth-child(3){
+    filter:brightness(1.5);
+}
+
+/* contrast 명암대비효과 -default =1 */
+/* 밝은 건더 밝게 어두운건 더 어둡게 */
+div img:nth-child(4){
+    filter:contrast(1.5);
+}
+
+/* grayscale - 이미지의 색상과 채도를 설정 -default = 0 */
+div img:nth-child(5){
+    filter:grayscale(0.5);
+}
+
+/* saturate - 채도를 줄임 -default =1 */
+/* 1보다 커지면 선명 / 1보다 작아지면 채도 빠짐 */
+/* grayscale =원래 색상이 맥시멈 =1 =maximum */
+/* saturate = 1을 기준으로 더 선명해지거나 채도가 빠지거나 */
+div img:nth-child(6){
+    filter:saturate(2.5);
+}
+
+/* hue-rotate - 색상환 - default =0deg */
+/* img 색상을 기준으로 색상환의 각도를 설정*/
+/* 색상환 안에서 각도를 더해서 현재 색상 기준으로 얼마만큼 변화를 줄건지 */
+div img:nth-child(7){
+    filter: hue-rotate(180deg);
+}
+/* invert- 색감 뿐만 아니라 명도까지 조절 -default=0 ,1 =max */
+div img:nth-child(8){
+    filter: invert(0.6);
+}
+
+/* sepia - 어떤 이미지던간에 갈색톤으로 변경 -default =0 */
+div img:nth-child(9){
+    filter: sepia(0.8);
+}

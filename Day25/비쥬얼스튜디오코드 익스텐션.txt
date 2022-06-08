@@ -1,0 +1,27 @@
+Auto Rename Tag 
+시작 태그 입력시 자동으로 닫는 태그를 완성시켜주는 확장기능
+
+Bracket Pair Colorizer
+탭으로 들여쓰기시 들여쓰기 공간을 색상별로 구분해주는 확장기능
+
+CSS Navigation
+HTML 문서에서 스타일을 확인하고 싶은 요소에 Ctrl+클릭하면 연결된 CSS구문을 확인해주는 확장기능
+
+Font Awesome Auto-complete 
+폰트어썸 웹폰트 아이콘 HTML태그에 연결시 코드 자동완성 및 아이콘 모양 미리보기 확장기능
+
+HTML Tag Wrapper
+특정 코드블록을 부모 태그로 감싸고 싶을때 원하는 태그들을 드래그후 Ctrl+i 단축키를 입력하면 div태그로 감싸주는 확장기능
+
+Live Server 
+https://nodejs.org/ko/(lts버젼으로 설치)
+현재 작성하고 있는 HTML문서를 웹서버를 통해 열어주고 코드의 변경사항이 있을때마다 자동으로 새로고침되는 확장기능
+
+Material Theme
+에디터의 다양한 컬러테마 모아놓은 확장기능  왼쪽 하단 톱니바퀴 버튼을 클릭 뒤, Color theme메뉴에서 테마 디자인 변경 가능
+
+Prettier
+코드들 자동으로 "예쁘게" 정렬해주는 확장기능 마우스 오른쪽 클릭- Format document with... - Prettier- code formatter선택시 코드 자동 정렬
+
+vscode icons
+에디터 왼쪽  Exploerer탭의 아이콘 모양을 보기좋게 변경해주는 확장기능
