@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+        /*
+            자료형 <Data Type>
+            (자료형 = 데이터 , 특정 데이터 안에 타입이 있다는 의미)
+
+            - 원시형 자료 <Primitive Type> : 자료 원형이 변수 공간에 담겨있음을 의미, 특정 값이 메모리에 바로 저장(값만 저장)
+                1. 문자형 (String)
+                2. 숫자형(Number)
+                3. 논리형(Boolean : true , false)
+                4. undefined(undefined) : 변수를 선언하고 값을 할당하지 않으면 undefined가 대신 저장됩니다.
+                (not fined , undefined 라고 뜨면 있어야 할 변수 공간에 값을 넣지 않는 실수, 에러)
+
+            - 참조형 자료<reference Type> : 값이 위치하고 있는 참조 값을 주고 값만 메모리에 저장(내장 함수까지 같이 참조)
+                Object = 객체
+                5. null (Object) : 명시적으로(일부러) 특정 변수의 값을 비워둘 때
+                6. 배열 (Object) : 연관된 값들을 그룹으로 묶어서 관리하는 형태
+                7. 객체 (Object) : 데이터를 key라는 인덱싱을 통해 자료를 구조적으로 묶어놓은 형태 <property>
+
+                 - 원시형 자료는 문자부터 undefined 까지는 Primitive Type 실제 메모리에 값만 담기는 형태
+                 - 참조형 자료는 어떤 값이 메모리에 담기는게 아니라 그 값의 참조 값만 담기는데, 그 값을 가지고 사용할 수 있는
+                   다양한 함수들까지 같이 참조가 된다고 이해하면 됩니다.
+        */
+
+        //문자형 <String>
+            const name1 = "teo"; //쌍따옴표
+            const name2 = 'teo' //따옴표
+            const name3 = `teo`; //백틱
+
+            const message = "I'm Iron Man";//작은 따옴표를 사용할 일이 있으면 쌍따옴표로 감싸줍니다
+
+            //작은 따옴표만 써야 한다면
+            const message0 = 'I \'m Iron Man';//역슬러쉬를 앞에 넣어주면 그 뒤에 문자는 특수문자로 인식합니다
+
+            //백틱은 문자열 내부에 변수를 표현할 때 유용
+            const message2 = `My Name is ${name1}`;
+            console.log(message2);
+
+            const message3 = `나는 ${33+1}살 입니다.`;
+            console.log(message3);
+
+
+            //숫자형 <Number>
+
+            const age = 30;
+            const pi = 3.14;
+            //숫자형은 사칙연산이 가능
+
+            const number = 1/0;
+            console.log(number);//infinity = 무한대를 얻습니다.
+
+            let name4 = "teo";
+            let num = name4/2;
+            console.log(num);
+            //NaN = Not a Number = 숫자가 아니다
+            //숫자와 관련된 작업을 할 때는 NaN 아닌지 항상 염두해두고 작업해야 합니다.
+
+            //논리형<Boolean : true , false> 
+            const name5 = "teo";
+            const age5 = 30;
+
+            console.log(name5 === "teo" );
+            console.log(age5 > 40);
+
+
+            //undefined <undefined> : 값이 할당되어 있지 않음
+            // null <Object> : 존재하지 않는 값
+            let age6;
+            console.log(age6);
+
+            let name6 = null;
+            console.log(name6);
+
+            //백틱 쓸 때 주의사항
+            const name7 = "teo";
+            //const message7 = `My Name is ${name7}`;
+            const message7 = "My Name is ${name}";
+            console.log(message7);
+
+            //변수명을 더해서 문자열로 반환
+            const name8 = "teo";
+            const first = "나는 ";
+            const last = " 입니다.";
+            console.log(first + name8 + last);
+
+            //숫자형 + 문자형
+            const age8 = 30; //숫자형
+            console.log(first + age8 + "살" + last);//이런 결과 값은 문자형으로 변경된다는 점을 인지해야 합니다
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

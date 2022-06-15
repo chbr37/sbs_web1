@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비교연산자</title>
+</head>
+<body>
+
+<script>
+
+    /*
+        비교연산자 : < , > , <= , => , === , != , !==
+
+        a = 3;
+        a가 3과 같은가?  a == 3
+        a가 3과 다른가? a != 3
+        비교 연산자를 쓰면 값을 반환하는데 반환 값은 항상 boolean형
+    */
+
+    //console.log(10 > 5);
+    //console.log(10 === 5);
+    //console.log(10 !== 5);
+
+    /*
+      비교 연산의 공식
+      a == b       a와  b의 값만 같아도 true
+      a === b     a와 b의 값과 문자열까지 같으면 true 그 외에는 false
+      a != b        a와 b의 값이 다르면 true
+      a !== b     a와 b의 값과 문자열까지 다르면 true
+      a > b        a의 값이 b보다 크면 true(초과)
+      a < b        a의 값이 b보다 작으면 true(미만)
+      a >= b      a의 값이 b보다 크거나 같으면 true(이상)
+      a <= b      a의 값이 b보다 작거나 같으면 true(이하)
+    */
+
+    let number1 = Number(prompt("숫자1 입력 : "));
+    let number2 = Number(prompt("숫자 2 입력 : "));
+    
+    console.log("number1 : " + number1);
+    console.log("number2 : " + number2);
+    console.log("a === b : " + (number1 === number2));
+    console.log("a !== b : " + (number1 !== number2));
+    console.log("a > b : " + (number1 > number2));
+    console.log("a < b : " + (number1 < number2));
+    console.log("a >= b : " + (number1 >= number2));
+    console.log("a <= b : " + (number1 <= number2));
+
+</script>
+
+
+
+    
+</body>
+</html>

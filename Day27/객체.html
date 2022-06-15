@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체 (Object)</title>
+</head>
+<body>
+    
+<script>
+
+    /*
+        객체 < Object > : data를 property라는 인덱싱을 통해 구조적으로 묶어놓은 형태
+          - 객체는 서로간의 자료 성격이 다른데, 하나의 그룹으로 묶어야 할 때 사용합니다.
+          ex) 이 수업을 듣고 있는 학생들의 신상정보를 하나의 그룹으로 묶어서 관리할 때
+    */
+
+
+    const student1 = {
+        name : "태오",     //이름
+        age : 30,            // 나이
+        isFemale : false,  // 여성인가요?
+        address : "Seoul" 
+    };
+    //서로 다른 값을 student1이라는 변수에 담았는데 이런 구조적인 자료 형태를 작업할 때 property
+    //라는 형태로 담아서 작업합니다. 이것을 객체라고 합니다.
+
+    //객체 데이터를 호출하는 방법은 2가지
+
+    console.log(student1["isFemale"]); // 문자열로 호출하는 방법
+    console.log(student1.address);//객체형 호출 방법
+
+    student1.address = "Busan";
+    console.log(student1);
+
+
+
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
