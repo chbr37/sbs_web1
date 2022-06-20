@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열 내장 함수</title>
+</head>
+<body>
+
+    <script>
+/* 
+        배열 내장 함수 = 배열의 값을 가공하는 배열전용 함수
+        많이 쓰는 기능 위주
+        toString() : 배열을 문자로 변환
+        join() : 구분자를 이용해 문자열을 이어붙임
+        pop() : 배열의 마지막 요소를 제거(리턴 값으로 잘라낸 요소를 반환시켜 줍니다)
+        push() : 배열의 끝부분에 새로운 요소를 추가 시킵니다(리턴 값으로 배열의 길이 반환)
+        shift() : 배열의 첫 부분 요소를 제거(리턴 값으로 잘라낸 요소를 반환)
+        unshift() : 배열의 첫 부분에 새로운 요소를 추가합니다(리턴 값으로 길이를 반환)
+        splice(삽입위치, 잘라낼 위치, 추가할 내용) : 배열에 새로운 요소를 잘라서 붙입니다
+        concat() : 두 개의 배열을 합쳐줍니다.
+        slice() : 배열 잘라내기
+*/
+
+const colors = ["tomato" , "green" , "blue"];
+const colors2 = ["pink", "yellow", "orange"];
+const colors3 = ["violet", "red", "hotpink"];
+
+/* const result = colors.toString();
+console.log(result);
+
+const result2 = colors.join(" + ");
+console.log(result2);
+
+const result3 = colors.pop();
+console.log(colors);
+console.log(result3);
+
+const result4 = colors.push(" yellow ");
+console.log(colors);
+console.log(result4);
+
+const result5 = colors.shift("");
+console.log(colors);
+console.log(result5);
+
+const result6 = colors.unshift("hotpink");
+console.log(colors);
+console.log(result6);
+
+//colors.splice(1,0,"pink");
+colors.splice(1,2,"pink");
+console.log(colors); */
+
+//const result7 = colors.concat(colors2);
+const result7 = colors.concat(colors2, colors3);
+console.log(result7);
+
+const result8 = colors.slice(1);
+console.log(result8);
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

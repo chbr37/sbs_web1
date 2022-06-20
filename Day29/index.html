@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> switch </title>
+</head>
+<body>
+    
+    <script>
+        /* 
+        조건문 switch : 여러 개의 코드 블록 중에서 하나를 선택해야 할 때 사용
+        switch(평가){
+            case A :
+                //A조건 부합시 실행할 코드 블록
+                break;
+            case B :
+                //B조건 부합시 실행할 코드 블록
+                break;
+            case C :
+                //C조건 부합시 실행할 코드 블록
+                break;
+            default;
+            //위 모든 조건이 부합되지 않으면 실행할 코드 블록
+        }
+        */
+
+        
+
+        //console.log(new Date().getDay());
+        //일요일 = 0, 월요일 = 1
+
+        switch(new Date().getDay()){
+            case 0:
+                console.log("Sunday");
+                break;
+            case 1:
+                console.log("Monday");
+                break;
+            case 2:
+                console.log("Tuesday");
+                break;
+             case 3:
+                console.log("Wednesday");
+                break;
+            case 4:
+                console.log("Thursday");
+                break;
+            case 5:
+                console.log("Friday");
+                break;
+            case 6:
+                console.log("Saturday");
+                break;
+            }
+/* 
+            let fruit = prompt("어떤 과일의 가격이 궁금하신가요?");
+
+            switch(fruit){
+            case"사과" :
+                console.log("개당 1,000원 입니다.");
+                break;
+            case"바나나" :
+                console.log("개당 2,000원 입니다.");
+                break;
+            case"키위" :
+                console.log("개당 3,000원 입니다.");
+                break;
+            case"멜론" :
+            case"수박":
+                console.log("개당 5,000원 입니다.");
+                break;
+            default:
+                console.log("해당 과일은 판매하지 않습니다.");
+ } */
+
+let num =Number( prompt("원하는 정수를 입력해주세요"));
+
+switch(num % 2){
+    case 0:
+        console.log("입력한 숫자는 짝수입니다.");
+        break;
+    case 1:
+        console.log("입력한 숫자는 홀수입니다.");
+        break;
+    default:
+        console.log("정수값을 입력해주세요.")
+}
+
+
+
+
+    </script>
+</body>
+</html>

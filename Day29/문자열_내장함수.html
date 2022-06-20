@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문자열 내장함수</title>
+</head>
+<body>
+    
+    <script>
+/* 
+        문자열.length : 문자열의 길이를 반환
+        문자열.indexOf() : 찾고자하는 문자열의 위치를 반환
+        문자열.slice() : 문자열에서 특정 부분을 추출하여 새로운 문자열로 반환
+        문자열.substr() : 문자열에서 특정 부분을 잘라냄
+        문자열.replace() : 문자열에서 특정 문자값을 바꿔치기
+        문자열.split() : 문자열을 배열로 변환
+*/
+
+const text = "Hello World"; //11개 , 띄어쓰기도 인식(공백 인식)
+console.log(text.length);
+
+console.log(text.indexOf("Wo")); // 즉 값이 있으면 해당 단어가 위치한 숫자 값이 나오고, 값이 없으면 -1이 나오기 때문에,
+// 해당 값을 포함하고 있는지 없는지에 대한 유무로만 주로 사용
+
+const text2 = text.slice(10, 11); //두 개의 인수가 들어가는데 첫번째는 시작점, 두번째는 어디까지 짜를 것인지 개수를 정합니다
+//(앞의 숫자보다 뒤에 숫자가 더 커야 표시가 됩니다)
+console.log(text2);
+
+const text3 = text.substr(6,3) //짜르는 시작점과 그 시작점부터 해가지고 어디까지 짜를건지 정합니다
+console.log(text3);
+
+const origin = "동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리 나라 만세";
+/* 
+let result="";
+if(origin.length > 20){
+    result = origin.substr(0,20) + "...";
+}else{
+    result = origin;
+} */
+
+//삼항 연산자 : 연산자 "?" 앞의 조건식이 참이면 "?"뒤에 코드가 실행되고, 거짓이면 : 뒤에 코드가 실행됩니다.
+(origin.length > 20)? result = origin.substr(0,20) + "..." : result = origin;
+console.log(result);
+
+let introduce = "우리 SBS아카데미 아트학원은 보다 높은 품질의 강의를 준비하고 있으며,SBS아카데미라는 학원 브랜드의 가치를 높이기 위해 노력하고 있습니다. 잘부탁드립니다."
+
+
+//const intro2 = introduce.replace("SBS", "MBC"); //첫번째는 변경하고자 하는 단어, 변경할 단어를(대소문자 구분)
+const intro3 = introduce.replace("/SBS/g", "MBC"); // g = global
+const intro4 = introduce.replace(/sbs/ig, "MBC") // ig = 대소문자 무시
+console.log(intro4);
+
+const colors = "tomato green blue";
+const arr = colors.split(" ");
+console.log(arr);
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수(function) </title>
+</head>
+<body>
+<script>
+
+/* 
+    함수<function>
+    1. 자주 사용하는 코드의 활용(재사용성)
+    2. 유지관리가 용이
+    3. 코드의 간결성(가독성)
+
+*/
+
+// function errorShow(){
+//     alert("오류가 발생했습니다. / 새로고침(F5)을 해주세요.");
+// }
+
+//errorShow();
+/* 
+    자주 쓰는 실행 코드들을 블록단위로 묶어서 패키징 해놓은 형태 = {} = 블록
+    - 함수 정의 : 미리 function 키워드를 이용해서 자주 쓰는 코드들을 묶어서 정의하는 것
+    - 함수 호출 : 정의되어 있는 함수를 호출을 해야만 기능이 실행됨
+    - CSS에서 class 선택자로 모듈을 미리 만들어 놓고 쓰는 개념
+*/
+
+/* 
+    함수의 종류
+    - 선언적 함수 : 함수에 미리 이름을 붙여서 정의해놓은 형태
+    (브라우저가 자바스크립트 파일을 읽을 때 선언적함수를 우선적으로 읽고 저장해둡니다.) = 호이스팅(hoisting)
+    (호출 위치가 자유롭습니다.)
+
+    - 익명 함수 : 함수에 이름 없이 정의하는 형태, 익명 함수 자체만으로는 호출 불가능
+    (변수에 익명 함수를 대입하거나, 특정 이벤트 객체에 대입하는 식으로 호출하여 사용)
+
+    - 대입형 함수 : 변수에 익명 함수가 대입된 형태
+
+    - 즉시 실행 함수 : 함수가 자기자신을 정의하자마자 바로 자신을 호출
+*/
+
+//선언적 함수
+function numberPlus(){
+    const number1 = 2;
+    const number2 = 3;
+    console.log(number1 + number2);
+}
+numberPlus();
+
+//익명 함수
+const numberMius = function(){
+    const number3 = 5;
+    const number4 = 3;
+    console.log(number3 - number4);
+}
+numberMius();
+
+//즉시 실행 함수
+//(정의)(호출)
+// 즉시 실행 함수 안쪽의 값들을 캡슐화
+//특정 함수 실행 코드 안 쪽의 값을 캡슐화해서 수정 당하거나 빠져나가지 않고 안 쪽에서 실행되도록 할 때 사용
+(function(){
+    const number5 =10;
+    const number6 =5;
+    console.log(number5 + number6);
+})()
+
+/* 
+    함수 매개변수 <parameter>
+        - 함수 외부에서 함수 내부로 특정 값을 전달하기  위해 존재하는 통로 이름
+
+        인수<argument>
+            - 함수를 호출할 때 파라미터를 통해서 전달되는 값
+            (인수가 함수 내부로 호출할 때 전달되는 값)
+
+            반환 값 <return>
+                - 함수 내부에서 만들어진 값을 함수 호출시 외부로 반환
+                - 함수구문 실행 도중 특정 시점에서 강제로 코드를 실행 중단할 때도 사용
+
+*/
+
+function plus(num1, num2){
+    //const num1 =2;
+    //const num2 =3;
+    const result = num1 + num2;
+    console.log(result);
+    return result;
+}
+//plus(20,30);
+const total = plus(20,30);
+console. log(total);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+</body>
+</html>
