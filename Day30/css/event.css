@@ -1,0 +1,21 @@
+a{
+    text-decoration: none;
+    display: block;
+    width: 100px;
+    height: 50px;
+    background: #555;
+    color: #fff;
+    font : bold 14px/50px "Arial";
+    margin: 100px;
+    text-align: center;
+}
+
+.box{
+    width: 500px;
+    height: 500px;
+    background: tomato;
+    margin: 100px;
+}
+body{
+    height: 4000px;
+}

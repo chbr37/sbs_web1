@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비구조화 할당</title>
+</head>
+<body>
+    <script>
+        // 비구조화 할당(구조분해 할당) - ES6 기법
+
+    /*     const colors = ["tomato", "orange", "yellow","green"];
+
+       
+        const color1 = colors[0];
+        const color2 = colors[1];
+        const color3 = colors[2];
+        const color4 = colors[3];
+        console.log(color2);
+        
+
+        const[color1, color2, color3, color4] = colors;
+
+        console.log(color1);
+        console.log(color2);
+        console.log(color3);
+        console.log(color4);
+
+        const studentA = {
+            name : "Teo",
+            age : 20,
+            isFemale : false,
+            hobby : "game"
+
+        }
+        const {name, age, isFemale, hobby} = studentA;
+        console.log(name);
+        console.log(age);
+        console.log(isFemale);
+        console.log(hobby); */
+
+
+
+        //=====================================================================
+        // 전개 연산자
+
+        let colors =["tomato","green","blue"];
+        let colors2 =["hotpink", ...colors];   // 기존 배열을 가지고 와서 합치는게 아니라 배열을 복사해서 합치는 것
+        console.log(colors2);
+
+        let hobby = ["game","sports","soccer"];
+        let hobby2 = ["dance","skating","cycling"];
+        let newHobby = [...hobby, ...hobby2];
+        console.log(newHobby);
+
+        let defaults ={
+            name:"Tester",
+            hobby:"game",
+            address:"Seoul"
+        }
+        let user1 = {
+            name : "Tom",
+            address:"Busan"
+        }
+        let newObj = {...defaults, ...user1}      // 덮어쓰기 당할 객체를 앞쪽에 써줍니다.
+        console.log(newObj);
+
+    </script>
+</body>
+</html>

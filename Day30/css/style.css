@@ -1,0 +1,31 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+
+.box{
+    width: 300px;
+    height: 300px;
+    margin: 100px;
+    background: tomato;
+}
+
+.box2{
+    width: 50%;
+    height: 300px;
+    margin: 50px;
+    background: red;
+}
+
+.box3{
+    width: 100px;
+    height: 100px;
+    margin: 100px;
+    background: #555;
+    line-height: 100px;
+    text-align: center;
+}
+
+.box3 a{
+    color:#fff;
+    font-weight: bold;
+    font: size 20px;
+    text-decoration: none;
+}
