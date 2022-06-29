@@ -1,0 +1,36 @@
+body{height:4000px;}
+#p1{
+    width:100px;
+    height:100px;
+    background:black
+}
+#p1.aqua{ background:aqua; }
+
+#p2{
+    width:100px;
+    height:100px;
+    background:orange;
+}
+
+#p2.red{background:red;}
+
+
+.myList::before{
+    content:"*";
+}
+
+.line1{ background:yellow; }
+.line2{ background:tomato; }
+
+
+
+
+
+
+
+
+
+
+
+
+
