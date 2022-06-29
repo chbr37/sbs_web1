@@ -1,0 +1,30 @@
+
+
+h1{
+    width: 100px;
+    height: 30px;
+    background: red;
+    font-size: 20px;
+}
+
+h2{
+    width: 100px;
+    height: 30px;
+    background: blue;
+    font-size: 20px;
+    color: #fff;
+}
+
+h3{
+    width: 100px;
+    height: 30px;
+    background: yellow;
+    font-size: 20px;
+}
+h4{
+    width: 100px;
+    height: 30px;
+    background: green;
+    font-size: 20px;
+    color: #fff;
+}
