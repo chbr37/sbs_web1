@@ -1,5 +1,7 @@
 
 
+
+
 $(function(){
 
     $(".accordion-list > li .answer").hide();
@@ -11,7 +13,7 @@ $(function(){
         }else {
             $(".accordion-list > li.active .answer").slideUp();
             $(".accordion-list > li.active").removeClass("active");
-            $(this).addClass("active").find(".answer").slidDown();
+            $(this).addClass("active").find(".answer").slideDown();
         }
         return false;
     });

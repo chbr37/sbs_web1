@@ -1,4 +1,4 @@
-*{margin: 0;padding: 0;bottom: 0;box-sizing: border-box;}
+*{margin: 0;padding: 0;border: 0;box-sizing: border-box;}
 ol,ul{list-style: none;}
 a{text-decoration: none;color:inherit;}
 
@@ -30,7 +30,8 @@ section{
 .glass:hover{
 animation: hover_ani 0.5s infinite;
 }
+
 @keyframes hover_ani{
-    0%{cursor:grab}
+    0%{curosr:grab}
     100%{cursor:grabbing}
 }
