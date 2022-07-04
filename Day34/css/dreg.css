@@ -1,0 +1,36 @@
+*{margin: 0;padding: 0;bottom: 0;box-sizing: border-box;}
+ol,ul{list-style: none;}
+a{text-decoration: none;color:inherit;}
+
+section{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg, #333 50%, #555 50%);
+}
+
+.glass{
+    width: 50vw;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 4vh 80px;
+    background: blue;
+    border: 8px solid #fff;
+    border-radius: 120px;
+    color: #fff;
+    cursor: grab;
+}
+
+.glass.stop {}
+
+.glass.start{
+    cursor:grabbing;
+}
+.glass:hover{
+animation: hover_ani 0.5s infinite;
+}
+@keyframes hover_ani{
+    0%{cursor:grab}
+    100%{cursor:grabbing}
+}

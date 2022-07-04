@@ -1,0 +1,45 @@
+*{margin: 0;padding: 0;bottom: 0;box-sizing: border-box;}
+ol,ul{list-style: none;}
+a{text-decoration: none;color:inherit;}
+.clx:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+body{
+    margin: 30px;
+}
+
+.gnb{}
+
+.gnb > li{
+    width: 150px;
+    height: 30px;
+    background: black;
+    line-height: 30px;
+    text-align: center;
+    border-right: 2px solid white;
+    color: white;
+    float:left
+}
+
+.gnd > li ul{
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.gnb > li:hover ul{
+    height: 120px;
+}
+
+.gnb > li ul > li{
+    width: 150px;
+    height: 30px;
+    background: black;
+    line-height: 30px;
+    text-align: center;
+    border-right: 2px solid white;
+    color: white;
+   
+}

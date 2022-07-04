@@ -1,0 +1,54 @@
+*{margin: 0;padding: 0;bottom: 0;box-sizing: border-box;}
+ol,ul{list-style: none;}
+a{text-decoration: none;color:inherit;}
+
+.accordion-list{
+    position: relative;
+    background: #f9f9f9;
+    padding: 20px;
+}
+
+.accordion-list li{
+    background: #fff;
+    margin: 0 auto 15px;
+    border: 1px solid green;
+    border-radius: 5px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.accordion-list li.active h3{
+
+}
+
+.accordion-list li h3{
+    font-weight: 700;
+    font-size: 15px;
+    position: relative;
+
+}
+
+.accordion-list li h3::after{
+    content:"+";
+    position: absolute;
+    right: 0;
+    top: -5px;
+    color: red;
+    font-size: 18px;
+    transition: all 0.35s;
+}
+
+.accordion-list li.active h3::after{
+    transform: rotate(45deg);
+}
+.accordion-list li .answer{
+    cursor: pointer;
+}
+
+.accordion-list li .answer p{
+    font-weight: 300;
+    padding-top: 10px;
+    line-height:1.5;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
